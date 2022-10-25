@@ -1,0 +1,960 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3809B5521E03D7C400252BB6 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3809B5501E03D7C400252BB6 /* libcrypto.a */; };
+		3809B5531E03D7C400252BB6 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3809B5511E03D7C400252BB6 /* libssl.a */; };
+		3844FF3F1E5D7BE5000558D8 /* NXLMacSignUpViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3844FF3D1E5D7BE5000558D8 /* NXLMacSignUpViewController.h */; };
+		3844FF401E5D7BE5000558D8 /* NXLMacSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3844FF3E1E5D7BE5000558D8 /* NXLMacSignUpViewController.m */; };
+		385D53BA1E601DE900FBFEAB /* NXLCheckValidTokenAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 385D53B81E601DE900FBFEAB /* NXLCheckValidTokenAPI.h */; };
+		385D53BB1E601DE900FBFEAB /* NXLCheckValidTokenAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 385D53B91E601DE900FBFEAB /* NXLCheckValidTokenAPI.m */; };
+		3862B9671DFE75DF009B13ED /* nxlMacSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 3862B9661DFE75DF009B13ED /* nxlMacSDK.h */; };
+		3862B9691DFE75DF009B13ED /* nxlMacSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 3862B9681DFE75DF009B13ED /* nxlMacSDK.m */; };
+		3862C2191DFE79F2009B13ED /* NSData+Encryption.h in Headers */ = {isa = PBXBuildFile; fileRef = 3862C2111DFE79F2009B13ED /* NSData+Encryption.h */; };
+		3862C21A1DFE79F2009B13ED /* NSData+Encryption.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3862C2121DFE79F2009B13ED /* NSData+Encryption.mm */; };
+		3862C21B1DFE79F2009B13ED /* NSData+zip.h in Headers */ = {isa = PBXBuildFile; fileRef = 3862C2131DFE79F2009B13ED /* NSData+zip.h */; };
+		3862C21C1DFE79F2009B13ED /* NSData+zip.m in Sources */ = {isa = PBXBuildFile; fileRef = 3862C2141DFE79F2009B13ED /* NSData+zip.m */; };
+		3862C21D1DFE79F2009B13ED /* NSString+Codec.h in Headers */ = {isa = PBXBuildFile; fileRef = 3862C2151DFE79F2009B13ED /* NSString+Codec.h */; };
+		3862C21E1DFE79F2009B13ED /* NSString+Codec.m in Sources */ = {isa = PBXBuildFile; fileRef = 3862C2161DFE79F2009B13ED /* NSString+Codec.m */; };
+		3862C21F1DFE79F2009B13ED /* NSString+Utility.h in Headers */ = {isa = PBXBuildFile; fileRef = 3862C2171DFE79F2009B13ED /* NSString+Utility.h */; };
+		3862C2201DFE79F2009B13ED /* NSString+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 3862C2181DFE79F2009B13ED /* NSString+Utility.m */; };
+		3862C2391DFE7A35009B13ED /* GTMBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = 3862C2231DFE7A35009B13ED /* GTMBase64.h */; };
+		3862C23A1DFE7A35009B13ED /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 3862C2241DFE7A35009B13ED /* GTMBase64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3862C23B1DFE7A35009B13ED /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 3862C2251DFE7A35009B13ED /* GTMDefines.h */; };
+		3862C23C1DFE7A35009B13ED /* NXLCacheManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 3862C2271DFE7A35009B13ED /* NXLCacheManager.h */; };
+		3862C23D1DFE7A35009B13ED /* NXLCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3862C2281DFE7A35009B13ED /* NXLCacheManager.m */; };
+		3862C24A1DFE7A35009B13ED /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 3862C2351DFE7A35009B13ED /* Reachability.h */; };
+		3862C2601DFE7A52009B13ED /* NXLDecryptTokenAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 3862C24F1DFE7A52009B13ED /* NXLDecryptTokenAPI.h */; };
+		3862C2621DFE7A52009B13ED /* NXLEncryptToken.h in Headers */ = {isa = PBXBuildFile; fileRef = 3862C2511DFE7A52009B13ED /* NXLEncryptToken.h */; };
+		3862C2631DFE7A52009B13ED /* NXLEncryptToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 3862C2521DFE7A52009B13ED /* NXLEncryptToken.m */; };
+		3862C2641DFE7A52009B13ED /* NXLLogAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 3862C2531DFE7A52009B13ED /* NXLLogAPI.h */; };
+		3862C2651DFE7A52009B13ED /* NXLLogAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 3862C2541DFE7A52009B13ED /* NXLLogAPI.m */; };
+		3862C2661DFE7A52009B13ED /* NXLMemshipAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 3862C2551DFE7A52009B13ED /* NXLMemshipAPI.h */; };
+		3862C2671DFE7A52009B13ED /* NXLMemshipAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 3862C2561DFE7A52009B13ED /* NXLMemshipAPI.m */; };
+		3862C2681DFE7A52009B13ED /* NXLRESTAPIScheduleProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 3862C2571DFE7A52009B13ED /* NXLRESTAPIScheduleProtocol.h */; };
+		3862C2691DFE7A52009B13ED /* NXLRESTAPITransferCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = 3862C2581DFE7A52009B13ED /* NXLRESTAPITransferCenter.h */; };
+		3862C26A1DFE7A52009B13ED /* NXLRESTAPITransferCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3862C2591DFE7A52009B13ED /* NXLRESTAPITransferCenter.m */; };
+		3862C26B1DFE7A52009B13ED /* NXLSharingAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 3862C25A1DFE7A52009B13ED /* NXLSharingAPI.h */; };
+		3862C26C1DFE7A52009B13ED /* NXLSharingAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 3862C25B1DFE7A52009B13ED /* NXLSharingAPI.m */; };
+		3862C26D1DFE7A52009B13ED /* NXLSuperRESTAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 3862C25C1DFE7A52009B13ED /* NXLSuperRESTAPI.h */; };
+		3862C26E1DFE7A52009B13ED /* NXLSuperRESTAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 3862C25D1DFE7A52009B13ED /* NXLSuperRESTAPI.m */; };
+		3862C26F1DFE7A52009B13ED /* NXLSyncHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 3862C25E1DFE7A52009B13ED /* NXLSyncHelper.h */; };
+		3862C2701DFE7A52009B13ED /* NXLSyncHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3862C25F1DFE7A52009B13ED /* NXLSyncHelper.m */; };
+		3862C2811DFE7A9E009B13ED /* NXLClientSessionStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 3862C2771DFE7A9E009B13ED /* NXLClientSessionStorage.h */; };
+		3862C2821DFE7A9E009B13ED /* NXLClientSessionStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3862C2781DFE7A9E009B13ED /* NXLClientSessionStorage.m */; };
+		3862C2851DFE7A9E009B13ED /* NXLRights.h in Headers */ = {isa = PBXBuildFile; fileRef = 3862C27B1DFE7A9E009B13ED /* NXLRights.h */; };
+		3862C2861DFE7A9E009B13ED /* NXLRights.m in Sources */ = {isa = PBXBuildFile; fileRef = 3862C27C1DFE7A9E009B13ED /* NXLRights.m */; };
+		3862C2871DFE7A9E009B13ED /* NXLSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 3862C27D1DFE7A9E009B13ED /* NXLSDK.h */; };
+		3862C2881DFE7A9E009B13ED /* NXLSDKDef.h in Headers */ = {isa = PBXBuildFile; fileRef = 3862C27E1DFE7A9E009B13ED /* NXLSDKDef.h */; };
+		3862C28C1DFE7AC0009B13ED /* NXLProfile.h in Headers */ = {isa = PBXBuildFile; fileRef = 3862C28A1DFE7AC0009B13ED /* NXLProfile.h */; };
+		3862C28D1DFE7AC0009B13ED /* NXLProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 3862C28B1DFE7AC0009B13ED /* NXLProfile.m */; };
+		3862C2911DFE7ACA009B13ED /* NXLRestAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 3862C28F1DFE7ACA009B13ED /* NXLRestAPI.h */; };
+		3862C2921DFE7ACA009B13ED /* NXLRestAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 3862C2901DFE7ACA009B13ED /* NXLRestAPI.m */; };
+		3862C2951DFE7C37009B13ED /* NXLLoger.h in Headers */ = {isa = PBXBuildFile; fileRef = 3862C2931DFE7C37009B13ED /* NXLLoger.h */; };
+		3862C2961DFE7C37009B13ED /* NXLLoger.m in Sources */ = {isa = PBXBuildFile; fileRef = 3862C2941DFE7C37009B13ED /* NXLLoger.m */; };
+		3862C29E1DFE7D3D009B13ED /* NXLTokenManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 3862C29C1DFE7D3D009B13ED /* NXLTokenManager.h */; };
+		3862C29F1DFE7D3D009B13ED /* NXLTokenManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3862C29D1DFE7D3D009B13ED /* NXLTokenManager.m */; };
+		3862C2AC1DFE7E7F009B13ED /* NXLKeyChain.h in Headers */ = {isa = PBXBuildFile; fileRef = 3862C2A01DFE7E7F009B13ED /* NXLKeyChain.h */; };
+		3862C2AD1DFE7E7F009B13ED /* NXLKeyChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 3862C2A11DFE7E7F009B13ED /* NXLKeyChain.m */; };
+		3862C2AE1DFE7E7F009B13ED /* NXLNetworkHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 3862C2A21DFE7E7F009B13ED /* NXLNetworkHelper.h */; };
+		3862C2AF1DFE7E7F009B13ED /* NXLOpenSSL.h in Headers */ = {isa = PBXBuildFile; fileRef = 3862C2A31DFE7E7F009B13ED /* NXLOpenSSL.h */; };
+		3862C2B01DFE7E7F009B13ED /* NXLOpenSSL.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3862C2A41DFE7E7F009B13ED /* NXLOpenSSL.mm */; };
+		3862C2B11DFE7E7F009B13ED /* NXLXMLDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 3862C2A51DFE7E7F009B13ED /* NXLXMLDocument.h */; };
+		3862C2B21DFE7E7F009B13ED /* NXLXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 3862C2A61DFE7E7F009B13ED /* NXLXMLDocument.m */; };
+		3862C2B31DFE7E7F009B13ED /* NXNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3862C2A71DFE7E7F009B13ED /* NXNetworkHelper.m */; };
+		3862C2B51DFE7E7F009B13ED /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 3862C2A91DFE7E7F009B13ED /* Reachability.m */; };
+		3862C2B61DFE7E7F009B13ED /* XMLWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 3862C2AA1DFE7E7F009B13ED /* XMLWriter.h */; };
+		3862C2B71DFE7E7F009B13ED /* XMLWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3862C2AB1DFE7E7F009B13ED /* XMLWriter.m */; };
+		3862C2DF1DFE88A8009B13ED /* NXLMetaData.h in Headers */ = {isa = PBXBuildFile; fileRef = 3862C2DD1DFE88A8009B13ED /* NXLMetaData.h */; };
+		3862C2E01DFE88A8009B13ED /* NXLMetaData.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3862C2DE1DFE88A8009B13ED /* NXLMetaData.mm */; };
+		3862C2F61DFEA951009B13ED /* rijndael-alg-fst.c in Sources */ = {isa = PBXBuildFile; fileRef = 3862C2E41DFEA951009B13ED /* rijndael-alg-fst.c */; };
+		3862C2F71DFEA951009B13ED /* rijndael-alg-fst.h in Headers */ = {isa = PBXBuildFile; fileRef = 3862C2E51DFEA951009B13ED /* rijndael-alg-fst.h */; };
+		3862C2F81DFEA951009B13ED /* base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 3862C2E71DFEA951009B13ED /* base64.h */; };
+		3862C2F91DFEA951009B13ED /* hmac.h in Headers */ = {isa = PBXBuildFile; fileRef = 3862C2E81DFEA951009B13ED /* hmac.h */; };
+		3862C2FA1DFEA951009B13ED /* sha1.h in Headers */ = {isa = PBXBuildFile; fileRef = 3862C2E91DFEA951009B13ED /* sha1.h */; };
+		3862C2FB1DFEA951009B13ED /* sha256.h in Headers */ = {isa = PBXBuildFile; fileRef = 3862C2EA1DFEA951009B13ED /* sha256.h */; };
+		3862C2FC1DFEA951009B13ED /* nxcommon.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 3862C2EB1DFEA951009B13ED /* nxcommon.hpp */; };
+		3862C2FD1DFEA951009B13ED /* nxlfmt.h in Headers */ = {isa = PBXBuildFile; fileRef = 3862C2EE1DFEA951009B13ED /* nxlfmt.h */; };
+		3862C2FE1DFEA951009B13ED /* nxlobj.h in Headers */ = {isa = PBXBuildFile; fileRef = 3862C2EF1DFEA951009B13ED /* nxlobj.h */; };
+		3862C2FF1DFEA951009B13ED /* utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 3862C2F01DFEA951009B13ED /* utils.h */; };
+		3862C3001DFEA951009B13ED /* nxlobj.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3862C2F21DFEA951009B13ED /* nxlobj.cpp */; };
+		3862C3011DFEA951009B13ED /* utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3862C2F31DFEA951009B13ED /* utils.cpp */; };
+		3862C3021DFEA951009B13ED /* nxlbasic.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 3862C2F41DFEA951009B13ED /* nxlbasic.hpp */; };
+		3862C3031DFEA951009B13ED /* nxlexception.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 3862C2F51DFEA951009B13ED /* nxlexception.hpp */; };
+		3862C3251E0140ED009B13ED /* NXLTenant.h in Headers */ = {isa = PBXBuildFile; fileRef = 3862C3241E0140ED009B13ED /* NXLTenant.h */; };
+		3862C3271E0140F5009B13ED /* NXLTenant.m in Sources */ = {isa = PBXBuildFile; fileRef = 3862C3261E0140F5009B13ED /* NXLTenant.m */; };
+		3862C32E1E014F63009B13ED /* NXLClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 3862C32C1E014F63009B13ED /* NXLClient.h */; };
+		3862C32F1E014F63009B13ED /* NXLClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 3862C32D1E014F63009B13ED /* NXLClient.m */; };
+		3862C3321E015133009B13ED /* NXLCommonUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 3862C3301E015133009B13ED /* NXLCommonUtils.h */; };
+		3862C3331E015133009B13ED /* NXLCommonUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3862C3311E015133009B13ED /* NXLCommonUtils.m */; };
+		3862C37F1E023B3D009B13ED /* NXLMacLoginViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3862C37D1E023B3D009B13ED /* NXLMacLoginViewController.h */; };
+		3862C3801E023B3D009B13ED /* NXLMacLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3862C37E1E023B3D009B13ED /* NXLMacLoginViewController.m */; };
+		3862C38B1E024EE8009B13ED /* NXLRouterLoginPageURL.h in Headers */ = {isa = PBXBuildFile; fileRef = 3862C3871E024EE8009B13ED /* NXLRouterLoginPageURL.h */; };
+		3862C38C1E024EE8009B13ED /* NXLRouterLoginPageURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 3862C3881E024EE8009B13ED /* NXLRouterLoginPageURL.m */; };
+		3862C38F1E028976009B13ED /* NXLMacClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 3862C38D1E028976009B13ED /* NXLMacClient.h */; };
+		3862C3901E028976009B13ED /* NXLMacClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 3862C38E1E028976009B13ED /* NXLMacClient.m */; };
+		3862C3931E028CCB009B13ED /* NXLUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 3862C3911E028CCB009B13ED /* NXLUtil.h */; };
+		3862C3941E028CCB009B13ED /* NXLUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 3862C3921E028CCB009B13ED /* NXLUtil.m */; };
+		5E282D891E1520CE00E7B5F0 /* NSDictionary+Ext.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E282D881E1520CE00E7B5F0 /* NSDictionary+Ext.h */; };
+		5E282D8B1E1520D500E7B5F0 /* NSDictionary+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E282D8A1E1520D500E7B5F0 /* NSDictionary+Ext.m */; };
+		7CFCC1A91FCE573400207FF0 /* NXLFileValidateDateModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C868DC91FBC1503001BA7CA /* NXLFileValidateDateModel.h */; };
+		7CFCC1AA1FCE575800207FF0 /* NXLFileValidateDateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C868DCA1FBC1503001BA7CA /* NXLFileValidateDateModel.m */; };
+		7E84FF7322C499D1003422AC /* NXLDecryptTokenAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E84FF7222C499D1003422AC /* NXLDecryptTokenAPI.m */; };
+		810ACC861E764D3C008DF6F0 /* NXLShareingLocalFileAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 810ACC821E764D3C008DF6F0 /* NXLShareingLocalFileAPI.h */; };
+		810ACC871E764D3C008DF6F0 /* NXLShareingLocalFileAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 810ACC831E764D3C008DF6F0 /* NXLShareingLocalFileAPI.m */; };
+		810ACC881E764D3C008DF6F0 /* NXLUpdateSharingRecipientsAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 810ACC841E764D3C008DF6F0 /* NXLUpdateSharingRecipientsAPI.h */; };
+		810ACC891E764D3C008DF6F0 /* NXLUpdateSharingRecipientsAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 810ACC851E764D3C008DF6F0 /* NXLUpdateSharingRecipientsAPI.m */; };
+		810ACC8E1E764E8D008DF6F0 /* NXLRemoveRecipientsFromDocumentAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 810ACC8A1E764E8D008DF6F0 /* NXLRemoveRecipientsFromDocumentAPI.h */; };
+		810ACC8F1E764E8D008DF6F0 /* NXLRemoveRecipientsFromDocumentAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 810ACC8B1E764E8D008DF6F0 /* NXLRemoveRecipientsFromDocumentAPI.m */; };
+		810ACC901E764E8D008DF6F0 /* NXLRevokingDocumentAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 810ACC8C1E764E8D008DF6F0 /* NXLRevokingDocumentAPI.h */; };
+		810ACC911E764E8D008DF6F0 /* NXLRevokingDocumentAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 810ACC8D1E764E8D008DF6F0 /* NXLRevokingDocumentAPI.m */; };
+		817C49381F15F84600111A4B /* NXLRepoFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 817C49361F15F84600111A4B /* NXLRepoFile.h */; };
+		817C49391F15F84600111A4B /* NXLRepoFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 817C49371F15F84600111A4B /* NXLRepoFile.m */; };
+		817C493C1F15F88900111A4B /* NXLShareRepoFileAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 817C493A1F15F88900111A4B /* NXLShareRepoFileAPI.h */; };
+		817C493D1F15F88900111A4B /* NXLShareRepoFileAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 817C493B1F15F88900111A4B /* NXLShareRepoFileAPI.m */; };
+		81F10F1D1E764F3600DC7FB6 /* NXLMultipartFormDataMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 81F10F1B1E764F3600DC7FB6 /* NXLMultipartFormDataMaker.h */; };
+		81F10F1E1E764F3600DC7FB6 /* NXLMultipartFormDataMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F10F1C1E764F3600DC7FB6 /* NXLMultipartFormDataMaker.m */; };
+		84BFEA541EE7F334004677B8 /* CHCSVParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 84BFEA521EE7F334004677B8 /* CHCSVParser.h */; };
+		84BFEA551EE7F334004677B8 /* CHCSVParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BFEA531EE7F334004677B8 /* CHCSVParser.m */; };
+		C9DE9620224325990017636A /* NXLRetrieveDecryptTokenAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = C9DE961E224325990017636A /* NXLRetrieveDecryptTokenAPI.h */; };
+		C9DE9621224325990017636A /* NXLRetrieveDecryptTokenAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DE961F224325990017636A /* NXLRetrieveDecryptTokenAPI.m */; };
+		C9DE9625224325CF0017636A /* NXLUpdateNXLMetadataAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = C9DE9623224325CE0017636A /* NXLUpdateNXLMetadataAPI.h */; };
+		C9DE9626224325CF0017636A /* NXLUpdateNXLMetadataAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DE9624224325CE0017636A /* NXLUpdateNXLMetadataAPI.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3809B5501E03D7C400252BB6 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = ../../../git_external/OpenSSL/Mac/1.0.2h/lib/libcrypto.a; sourceTree = "<group>"; };
+		3809B5511E03D7C400252BB6 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = ../../../git_external/OpenSSL/Mac/1.0.2h/lib/libssl.a; sourceTree = "<group>"; };
+		3844FF3D1E5D7BE5000558D8 /* NXLMacSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXLMacSignUpViewController.h; sourceTree = "<group>"; };
+		3844FF3E1E5D7BE5000558D8 /* NXLMacSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXLMacSignUpViewController.m; sourceTree = "<group>"; };
+		385D53B81E601DE900FBFEAB /* NXLCheckValidTokenAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXLCheckValidTokenAPI.h; sourceTree = "<group>"; };
+		385D53B91E601DE900FBFEAB /* NXLCheckValidTokenAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXLCheckValidTokenAPI.m; sourceTree = "<group>"; };
+		3862B9631DFE75DF009B13ED /* libnxlMacSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libnxlMacSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3862B9661DFE75DF009B13ED /* nxlMacSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = nxlMacSDK.h; sourceTree = "<group>"; };
+		3862B9681DFE75DF009B13ED /* nxlMacSDK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = nxlMacSDK.m; sourceTree = "<group>"; };
+		3862C2111DFE79F2009B13ED /* NSData+Encryption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Encryption.h"; sourceTree = "<group>"; };
+		3862C2121DFE79F2009B13ED /* NSData+Encryption.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSData+Encryption.mm"; sourceTree = "<group>"; };
+		3862C2131DFE79F2009B13ED /* NSData+zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+zip.h"; sourceTree = "<group>"; };
+		3862C2141DFE79F2009B13ED /* NSData+zip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+zip.m"; sourceTree = "<group>"; };
+		3862C2151DFE79F2009B13ED /* NSString+Codec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Codec.h"; sourceTree = "<group>"; };
+		3862C2161DFE79F2009B13ED /* NSString+Codec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Codec.m"; sourceTree = "<group>"; };
+		3862C2171DFE79F2009B13ED /* NSString+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Utility.h"; sourceTree = "<group>"; };
+		3862C2181DFE79F2009B13ED /* NSString+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Utility.m"; sourceTree = "<group>"; };
+		3862C2231DFE7A35009B13ED /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		3862C2241DFE7A35009B13ED /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		3862C2251DFE7A35009B13ED /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		3862C2271DFE7A35009B13ED /* NXLCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXLCacheManager.h; sourceTree = "<group>"; };
+		3862C2281DFE7A35009B13ED /* NXLCacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXLCacheManager.m; sourceTree = "<group>"; };
+		3862C2351DFE7A35009B13ED /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		3862C2361DFE7A35009B13ED /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		3862C24F1DFE7A52009B13ED /* NXLDecryptTokenAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXLDecryptTokenAPI.h; sourceTree = "<group>"; };
+		3862C2511DFE7A52009B13ED /* NXLEncryptToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXLEncryptToken.h; sourceTree = "<group>"; };
+		3862C2521DFE7A52009B13ED /* NXLEncryptToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXLEncryptToken.m; sourceTree = "<group>"; };
+		3862C2531DFE7A52009B13ED /* NXLLogAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXLLogAPI.h; sourceTree = "<group>"; };
+		3862C2541DFE7A52009B13ED /* NXLLogAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXLLogAPI.m; sourceTree = "<group>"; };
+		3862C2551DFE7A52009B13ED /* NXLMemshipAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXLMemshipAPI.h; sourceTree = "<group>"; };
+		3862C2561DFE7A52009B13ED /* NXLMemshipAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXLMemshipAPI.m; sourceTree = "<group>"; };
+		3862C2571DFE7A52009B13ED /* NXLRESTAPIScheduleProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXLRESTAPIScheduleProtocol.h; sourceTree = "<group>"; };
+		3862C2581DFE7A52009B13ED /* NXLRESTAPITransferCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXLRESTAPITransferCenter.h; sourceTree = "<group>"; };
+		3862C2591DFE7A52009B13ED /* NXLRESTAPITransferCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXLRESTAPITransferCenter.m; sourceTree = "<group>"; };
+		3862C25A1DFE7A52009B13ED /* NXLSharingAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXLSharingAPI.h; sourceTree = "<group>"; };
+		3862C25B1DFE7A52009B13ED /* NXLSharingAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXLSharingAPI.m; sourceTree = "<group>"; };
+		3862C25C1DFE7A52009B13ED /* NXLSuperRESTAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXLSuperRESTAPI.h; sourceTree = "<group>"; };
+		3862C25D1DFE7A52009B13ED /* NXLSuperRESTAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXLSuperRESTAPI.m; sourceTree = "<group>"; };
+		3862C25E1DFE7A52009B13ED /* NXLSyncHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXLSyncHelper.h; sourceTree = "<group>"; };
+		3862C25F1DFE7A52009B13ED /* NXLSyncHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXLSyncHelper.m; sourceTree = "<group>"; };
+		3862C2771DFE7A9E009B13ED /* NXLClientSessionStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NXLClientSessionStorage.h; path = ../../../NXLClientSessionStorage.h; sourceTree = "<group>"; };
+		3862C2781DFE7A9E009B13ED /* NXLClientSessionStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NXLClientSessionStorage.m; path = ../../../NXLClientSessionStorage.m; sourceTree = "<group>"; };
+		3862C27B1DFE7A9E009B13ED /* NXLRights.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NXLRights.h; path = ../../../NXLRights.h; sourceTree = "<group>"; };
+		3862C27C1DFE7A9E009B13ED /* NXLRights.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NXLRights.m; path = ../../../NXLRights.m; sourceTree = "<group>"; };
+		3862C27D1DFE7A9E009B13ED /* NXLSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NXLSDK.h; path = ../../../NXLSDK.h; sourceTree = "<group>"; };
+		3862C27E1DFE7A9E009B13ED /* NXLSDKDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NXLSDKDef.h; path = ../../../NXLSDKDef.h; sourceTree = "<group>"; };
+		3862C28A1DFE7AC0009B13ED /* NXLProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXLProfile.h; sourceTree = "<group>"; };
+		3862C28B1DFE7AC0009B13ED /* NXLProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXLProfile.m; sourceTree = "<group>"; };
+		3862C28F1DFE7ACA009B13ED /* NXLRestAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXLRestAPI.h; sourceTree = "<group>"; };
+		3862C2901DFE7ACA009B13ED /* NXLRestAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXLRestAPI.m; sourceTree = "<group>"; };
+		3862C2931DFE7C37009B13ED /* NXLLoger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NXLLoger.h; path = ../../../NXLLoger.h; sourceTree = "<group>"; };
+		3862C2941DFE7C37009B13ED /* NXLLoger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NXLLoger.m; path = ../../../NXLLoger.m; sourceTree = "<group>"; };
+		3862C29C1DFE7D3D009B13ED /* NXLTokenManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXLTokenManager.h; sourceTree = "<group>"; };
+		3862C29D1DFE7D3D009B13ED /* NXLTokenManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXLTokenManager.m; sourceTree = "<group>"; };
+		3862C2A01DFE7E7F009B13ED /* NXLKeyChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXLKeyChain.h; sourceTree = "<group>"; };
+		3862C2A11DFE7E7F009B13ED /* NXLKeyChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXLKeyChain.m; sourceTree = "<group>"; };
+		3862C2A21DFE7E7F009B13ED /* NXLNetworkHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXLNetworkHelper.h; sourceTree = "<group>"; };
+		3862C2A31DFE7E7F009B13ED /* NXLOpenSSL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXLOpenSSL.h; sourceTree = "<group>"; };
+		3862C2A41DFE7E7F009B13ED /* NXLOpenSSL.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = NXLOpenSSL.mm; sourceTree = "<group>"; };
+		3862C2A51DFE7E7F009B13ED /* NXLXMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXLXMLDocument.h; sourceTree = "<group>"; };
+		3862C2A61DFE7E7F009B13ED /* NXLXMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXLXMLDocument.m; sourceTree = "<group>"; };
+		3862C2A71DFE7E7F009B13ED /* NXNetworkHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXNetworkHelper.m; sourceTree = "<group>"; };
+		3862C2A81DFE7E7F009B13ED /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		3862C2A91DFE7E7F009B13ED /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		3862C2AA1DFE7E7F009B13ED /* XMLWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLWriter.h; sourceTree = "<group>"; };
+		3862C2AB1DFE7E7F009B13ED /* XMLWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLWriter.m; sourceTree = "<group>"; };
+		3862C2DD1DFE88A8009B13ED /* NXLMetaData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NXLMetaData.h; path = ../../../nxlOperation/NXLMetaData.h; sourceTree = "<group>"; };
+		3862C2DE1DFE88A8009B13ED /* NXLMetaData.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = NXLMetaData.mm; path = ../../../nxlOperation/NXLMetaData.mm; sourceTree = "<group>"; };
+		3862C2E41DFEA951009B13ED /* rijndael-alg-fst.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "rijndael-alg-fst.c"; sourceTree = "<group>"; };
+		3862C2E51DFEA951009B13ED /* rijndael-alg-fst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "rijndael-alg-fst.h"; sourceTree = "<group>"; };
+		3862C2E71DFEA951009B13ED /* base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base64.h; sourceTree = "<group>"; };
+		3862C2E81DFEA951009B13ED /* hmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hmac.h; sourceTree = "<group>"; };
+		3862C2E91DFEA951009B13ED /* sha1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha1.h; sourceTree = "<group>"; };
+		3862C2EA1DFEA951009B13ED /* sha256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha256.h; sourceTree = "<group>"; };
+		3862C2EB1DFEA951009B13ED /* nxcommon.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = nxcommon.hpp; path = ../../../../common/nxcommon.hpp; sourceTree = "<group>"; };
+		3862C2EE1DFEA951009B13ED /* nxlfmt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nxlfmt.h; sourceTree = "<group>"; };
+		3862C2EF1DFEA951009B13ED /* nxlobj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nxlobj.h; sourceTree = "<group>"; };
+		3862C2F01DFEA951009B13ED /* utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
+		3862C2F21DFEA951009B13ED /* nxlobj.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = nxlobj.cpp; sourceTree = "<group>"; };
+		3862C2F31DFEA951009B13ED /* utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = utils.cpp; sourceTree = "<group>"; };
+		3862C2F41DFEA951009B13ED /* nxlbasic.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = nxlbasic.hpp; path = ../../../../common/nxlbasic.hpp; sourceTree = "<group>"; };
+		3862C2F51DFEA951009B13ED /* nxlexception.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = nxlexception.hpp; path = ../../../../common/nxlexception.hpp; sourceTree = "<group>"; };
+		3862C3241E0140ED009B13ED /* NXLTenant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NXLTenant.h; path = ../../../NXLTenant.h; sourceTree = "<group>"; };
+		3862C3261E0140F5009B13ED /* NXLTenant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NXLTenant.m; path = ../../../NXLTenant.m; sourceTree = "<group>"; };
+		3862C32C1E014F63009B13ED /* NXLClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXLClient.h; sourceTree = "<group>"; };
+		3862C32D1E014F63009B13ED /* NXLClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXLClient.m; sourceTree = "<group>"; };
+		3862C3301E015133009B13ED /* NXLCommonUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NXLCommonUtils.h; path = nxlMacSDK/NXLCommonUtils.h; sourceTree = "<group>"; };
+		3862C3311E015133009B13ED /* NXLCommonUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NXLCommonUtils.m; path = nxlMacSDK/NXLCommonUtils.m; sourceTree = "<group>"; };
+		3862C37D1E023B3D009B13ED /* NXLMacLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NXLMacLoginViewController.h; path = nxlMacSDK/NXLMacLoginViewController.h; sourceTree = "<group>"; };
+		3862C37E1E023B3D009B13ED /* NXLMacLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NXLMacLoginViewController.m; path = nxlMacSDK/NXLMacLoginViewController.m; sourceTree = "<group>"; };
+		3862C3871E024EE8009B13ED /* NXLRouterLoginPageURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXLRouterLoginPageURL.h; sourceTree = "<group>"; };
+		3862C3881E024EE8009B13ED /* NXLRouterLoginPageURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXLRouterLoginPageURL.m; sourceTree = "<group>"; };
+		3862C38D1E028976009B13ED /* NXLMacClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NXLMacClient.h; path = nxlMacSDK/NXLMacClient.h; sourceTree = "<group>"; };
+		3862C38E1E028976009B13ED /* NXLMacClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NXLMacClient.m; path = nxlMacSDK/NXLMacClient.m; sourceTree = "<group>"; };
+		3862C3911E028CCB009B13ED /* NXLUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXLUtil.h; sourceTree = "<group>"; };
+		3862C3921E028CCB009B13ED /* NXLUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXLUtil.m; sourceTree = "<group>"; };
+		5E282D881E1520CE00E7B5F0 /* NSDictionary+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+Ext.h"; path = "../NSDictionary+Ext.h"; sourceTree = "<group>"; };
+		5E282D8A1E1520D500E7B5F0 /* NSDictionary+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+Ext.m"; path = "../NSDictionary+Ext.m"; sourceTree = "<group>"; };
+		7C868DC91FBC1503001BA7CA /* NXLFileValidateDateModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NXLFileValidateDateModel.h; sourceTree = "<group>"; };
+		7C868DCA1FBC1503001BA7CA /* NXLFileValidateDateModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NXLFileValidateDateModel.m; sourceTree = "<group>"; };
+		7E84FF7222C499D1003422AC /* NXLDecryptTokenAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXLDecryptTokenAPI.m; sourceTree = "<group>"; };
+		810ACC821E764D3C008DF6F0 /* NXLShareingLocalFileAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXLShareingLocalFileAPI.h; sourceTree = "<group>"; };
+		810ACC831E764D3C008DF6F0 /* NXLShareingLocalFileAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXLShareingLocalFileAPI.m; sourceTree = "<group>"; };
+		810ACC841E764D3C008DF6F0 /* NXLUpdateSharingRecipientsAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXLUpdateSharingRecipientsAPI.h; sourceTree = "<group>"; };
+		810ACC851E764D3C008DF6F0 /* NXLUpdateSharingRecipientsAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXLUpdateSharingRecipientsAPI.m; sourceTree = "<group>"; };
+		810ACC8A1E764E8D008DF6F0 /* NXLRemoveRecipientsFromDocumentAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NXLRemoveRecipientsFromDocumentAPI.h; path = ../NXLRemoveRecipientsFromDocumentAPI.h; sourceTree = "<group>"; };
+		810ACC8B1E764E8D008DF6F0 /* NXLRemoveRecipientsFromDocumentAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NXLRemoveRecipientsFromDocumentAPI.m; path = ../NXLRemoveRecipientsFromDocumentAPI.m; sourceTree = "<group>"; };
+		810ACC8C1E764E8D008DF6F0 /* NXLRevokingDocumentAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NXLRevokingDocumentAPI.h; path = ../NXLRevokingDocumentAPI.h; sourceTree = "<group>"; };
+		810ACC8D1E764E8D008DF6F0 /* NXLRevokingDocumentAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NXLRevokingDocumentAPI.m; path = ../NXLRevokingDocumentAPI.m; sourceTree = "<group>"; };
+		817C49361F15F84600111A4B /* NXLRepoFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NXLRepoFile.h; path = ../../../NXLRepoFile.h; sourceTree = "<group>"; };
+		817C49371F15F84600111A4B /* NXLRepoFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NXLRepoFile.m; path = ../../../NXLRepoFile.m; sourceTree = "<group>"; };
+		817C493A1F15F88900111A4B /* NXLShareRepoFileAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NXLShareRepoFileAPI.h; path = ../NXLShareRepoFileAPI.h; sourceTree = "<group>"; };
+		817C493B1F15F88900111A4B /* NXLShareRepoFileAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NXLShareRepoFileAPI.m; path = ../NXLShareRepoFileAPI.m; sourceTree = "<group>"; };
+		81F10F1B1E764F3600DC7FB6 /* NXLMultipartFormDataMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NXLMultipartFormDataMaker.h; path = ../NXLMultipartFormDataMaker.h; sourceTree = "<group>"; };
+		81F10F1C1E764F3600DC7FB6 /* NXLMultipartFormDataMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NXLMultipartFormDataMaker.m; path = ../NXLMultipartFormDataMaker.m; sourceTree = "<group>"; };
+		84BFEA521EE7F334004677B8 /* CHCSVParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CHCSVParser.h; path = ../CHCSVParser.h; sourceTree = "<group>"; };
+		84BFEA531EE7F334004677B8 /* CHCSVParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CHCSVParser.m; path = ../CHCSVParser.m; sourceTree = "<group>"; };
+		C9DE961E224325990017636A /* NXLRetrieveDecryptTokenAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NXLRetrieveDecryptTokenAPI.h; path = ../NXLRetrieveDecryptTokenAPI.h; sourceTree = "<group>"; };
+		C9DE961F224325990017636A /* NXLRetrieveDecryptTokenAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NXLRetrieveDecryptTokenAPI.m; path = ../NXLRetrieveDecryptTokenAPI.m; sourceTree = "<group>"; };
+		C9DE9623224325CE0017636A /* NXLUpdateNXLMetadataAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXLUpdateNXLMetadataAPI.h; sourceTree = "<group>"; };
+		C9DE9624224325CE0017636A /* NXLUpdateNXLMetadataAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXLUpdateNXLMetadataAPI.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3862B9601DFE75DF009B13ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3809B5521E03D7C400252BB6 /* libcrypto.a in Frameworks */,
+				3809B5531E03D7C400252BB6 /* libssl.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3862B95A1DFE75DF009B13ED = {
+			isa = PBXGroup;
+			children = (
+				C9DE9622224325CE0017636A /* nxSDK */,
+				38D5DAD71E07956D00F46DC5 /* MacSpecial */,
+				3862C3841E024EE8009B13ED /* Login */,
+				3862B9651DFE75DF009B13ED /* nxlMacSDK */,
+				3862B9641DFE75DF009B13ED /* Products */,
+				3862C3961E029C09009B13ED /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3862B9641DFE75DF009B13ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3862B9631DFE75DF009B13ED /* libnxlMacSDK.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3862B9651DFE75DF009B13ED /* nxlMacSDK */ = {
+			isa = PBXGroup;
+			children = (
+				817C49361F15F84600111A4B /* NXLRepoFile.h */,
+				817C49371F15F84600111A4B /* NXLRepoFile.m */,
+				3862C2771DFE7A9E009B13ED /* NXLClientSessionStorage.h */,
+				3862C2931DFE7C37009B13ED /* NXLLoger.h */,
+				3862B9661DFE75DF009B13ED /* nxlMacSDK.h */,
+				3862C27B1DFE7A9E009B13ED /* NXLRights.h */,
+				3862C27D1DFE7A9E009B13ED /* NXLSDK.h */,
+				3862C27E1DFE7A9E009B13ED /* NXLSDKDef.h */,
+				3862C3241E0140ED009B13ED /* NXLTenant.h */,
+				3862C2781DFE7A9E009B13ED /* NXLClientSessionStorage.m */,
+				3862C2941DFE7C37009B13ED /* NXLLoger.m */,
+				3862B9681DFE75DF009B13ED /* nxlMacSDK.m */,
+				3862C27C1DFE7A9E009B13ED /* NXLRights.m */,
+				3862C3261E0140F5009B13ED /* NXLTenant.m */,
+				3862C2101DFE79F2009B13ED /* category */,
+				3862C28E1DFE7ACA009B13ED /* network */,
+				3862C2891DFE7AC0009B13ED /* NXClientAuthInfo */,
+				3862B96F1DFE7648009B13ED /* nxlOperation */,
+				3862C24E1DFE7A52009B13ED /* nxRESTAPI */,
+				3862C29B1DFE7D3D009B13ED /* nxToken */,
+				7C868DC81FBC1503001BA7CA /* Policy */,
+				3862C2211DFE7A35009B13ED /* utlis */,
+				3862C32C1E014F63009B13ED /* NXLClient.h */,
+				3862C32D1E014F63009B13ED /* NXLClient.m */,
+			);
+			path = nxlMacSDK;
+			sourceTree = "<group>";
+		};
+		3862B96F1DFE7648009B13ED /* nxlOperation */ = {
+			isa = PBXGroup;
+			children = (
+				3862C2E11DFEA93B009B13ED /* common */,
+				3862C2DD1DFE88A8009B13ED /* NXLMetaData.h */,
+				3862C2DE1DFE88A8009B13ED /* NXLMetaData.mm */,
+			);
+			name = nxlOperation;
+			sourceTree = "<group>";
+		};
+		3862C2101DFE79F2009B13ED /* category */ = {
+			isa = PBXGroup;
+			children = (
+				5E282D8A1E1520D500E7B5F0 /* NSDictionary+Ext.m */,
+				5E282D881E1520CE00E7B5F0 /* NSDictionary+Ext.h */,
+				3862C2111DFE79F2009B13ED /* NSData+Encryption.h */,
+				3862C2121DFE79F2009B13ED /* NSData+Encryption.mm */,
+				3862C2131DFE79F2009B13ED /* NSData+zip.h */,
+				3862C2141DFE79F2009B13ED /* NSData+zip.m */,
+				3862C2151DFE79F2009B13ED /* NSString+Codec.h */,
+				3862C2161DFE79F2009B13ED /* NSString+Codec.m */,
+				3862C2171DFE79F2009B13ED /* NSString+Utility.h */,
+				3862C2181DFE79F2009B13ED /* NSString+Utility.m */,
+			);
+			name = category;
+			path = ../../../category;
+			sourceTree = "<group>";
+		};
+		3862C2211DFE7A35009B13ED /* utlis */ = {
+			isa = PBXGroup;
+			children = (
+				84BFEA521EE7F334004677B8 /* CHCSVParser.h */,
+				84BFEA531EE7F334004677B8 /* CHCSVParser.m */,
+				3862C2A01DFE7E7F009B13ED /* NXLKeyChain.h */,
+				3862C2A11DFE7E7F009B13ED /* NXLKeyChain.m */,
+				3862C2A21DFE7E7F009B13ED /* NXLNetworkHelper.h */,
+				3862C2A31DFE7E7F009B13ED /* NXLOpenSSL.h */,
+				3862C2A41DFE7E7F009B13ED /* NXLOpenSSL.mm */,
+				3862C2A51DFE7E7F009B13ED /* NXLXMLDocument.h */,
+				3862C2A61DFE7E7F009B13ED /* NXLXMLDocument.m */,
+				3862C2A71DFE7E7F009B13ED /* NXNetworkHelper.m */,
+				3862C2A81DFE7E7F009B13ED /* Reachability.h */,
+				3862C2A91DFE7E7F009B13ED /* Reachability.m */,
+				3862C2AA1DFE7E7F009B13ED /* XMLWriter.h */,
+				3862C2AB1DFE7E7F009B13ED /* XMLWriter.m */,
+				3862C2221DFE7A35009B13ED /* base64 */,
+				3862C2261DFE7A35009B13ED /* cache */,
+				3862C2351DFE7A35009B13ED /* Reachability.h */,
+				3862C2361DFE7A35009B13ED /* Reachability.m */,
+				3862C3911E028CCB009B13ED /* NXLUtil.h */,
+				3862C3921E028CCB009B13ED /* NXLUtil.m */,
+			);
+			name = utlis;
+			path = ../../../utlis;
+			sourceTree = "<group>";
+		};
+		3862C2221DFE7A35009B13ED /* base64 */ = {
+			isa = PBXGroup;
+			children = (
+				3862C2231DFE7A35009B13ED /* GTMBase64.h */,
+				3862C2241DFE7A35009B13ED /* GTMBase64.m */,
+				3862C2251DFE7A35009B13ED /* GTMDefines.h */,
+			);
+			path = base64;
+			sourceTree = "<group>";
+		};
+		3862C2261DFE7A35009B13ED /* cache */ = {
+			isa = PBXGroup;
+			children = (
+				3862C2271DFE7A35009B13ED /* NXLCacheManager.h */,
+				3862C2281DFE7A35009B13ED /* NXLCacheManager.m */,
+			);
+			path = cache;
+			sourceTree = "<group>";
+		};
+		3862C24E1DFE7A52009B13ED /* nxRESTAPI */ = {
+			isa = PBXGroup;
+			children = (
+				81F10F1A1E764F2900DC7FB6 /* tools */,
+				810ACC8A1E764E8D008DF6F0 /* NXLRemoveRecipientsFromDocumentAPI.h */,
+				810ACC8B1E764E8D008DF6F0 /* NXLRemoveRecipientsFromDocumentAPI.m */,
+				810ACC8C1E764E8D008DF6F0 /* NXLRevokingDocumentAPI.h */,
+				810ACC8D1E764E8D008DF6F0 /* NXLRevokingDocumentAPI.m */,
+				810ACC821E764D3C008DF6F0 /* NXLShareingLocalFileAPI.h */,
+				810ACC831E764D3C008DF6F0 /* NXLShareingLocalFileAPI.m */,
+				810ACC841E764D3C008DF6F0 /* NXLUpdateSharingRecipientsAPI.h */,
+				810ACC851E764D3C008DF6F0 /* NXLUpdateSharingRecipientsAPI.m */,
+				3862C24F1DFE7A52009B13ED /* NXLDecryptTokenAPI.h */,
+				7E84FF7222C499D1003422AC /* NXLDecryptTokenAPI.m */,
+				3862C2511DFE7A52009B13ED /* NXLEncryptToken.h */,
+				3862C2521DFE7A52009B13ED /* NXLEncryptToken.m */,
+				3862C2531DFE7A52009B13ED /* NXLLogAPI.h */,
+				3862C2541DFE7A52009B13ED /* NXLLogAPI.m */,
+				385D53B81E601DE900FBFEAB /* NXLCheckValidTokenAPI.h */,
+				385D53B91E601DE900FBFEAB /* NXLCheckValidTokenAPI.m */,
+				C9DE961E224325990017636A /* NXLRetrieveDecryptTokenAPI.h */,
+				C9DE961F224325990017636A /* NXLRetrieveDecryptTokenAPI.m */,
+				3862C2551DFE7A52009B13ED /* NXLMemshipAPI.h */,
+				3862C2561DFE7A52009B13ED /* NXLMemshipAPI.m */,
+				3862C2571DFE7A52009B13ED /* NXLRESTAPIScheduleProtocol.h */,
+				3862C2581DFE7A52009B13ED /* NXLRESTAPITransferCenter.h */,
+				3862C2591DFE7A52009B13ED /* NXLRESTAPITransferCenter.m */,
+				3862C25A1DFE7A52009B13ED /* NXLSharingAPI.h */,
+				3862C25B1DFE7A52009B13ED /* NXLSharingAPI.m */,
+				3862C25C1DFE7A52009B13ED /* NXLSuperRESTAPI.h */,
+				3862C25D1DFE7A52009B13ED /* NXLSuperRESTAPI.m */,
+				3862C25E1DFE7A52009B13ED /* NXLSyncHelper.h */,
+				3862C25F1DFE7A52009B13ED /* NXLSyncHelper.m */,
+				817C493A1F15F88900111A4B /* NXLShareRepoFileAPI.h */,
+				817C493B1F15F88900111A4B /* NXLShareRepoFileAPI.m */,
+			);
+			name = nxRESTAPI;
+			path = ../../../nxRESTAPI;
+			sourceTree = "<group>";
+		};
+		3862C2891DFE7AC0009B13ED /* NXClientAuthInfo */ = {
+			isa = PBXGroup;
+			children = (
+				3862C28A1DFE7AC0009B13ED /* NXLProfile.h */,
+				3862C28B1DFE7AC0009B13ED /* NXLProfile.m */,
+			);
+			name = NXClientAuthInfo;
+			path = ../../../NXClientAuthInfo;
+			sourceTree = "<group>";
+		};
+		3862C28E1DFE7ACA009B13ED /* network */ = {
+			isa = PBXGroup;
+			children = (
+				3862C28F1DFE7ACA009B13ED /* NXLRestAPI.h */,
+				3862C2901DFE7ACA009B13ED /* NXLRestAPI.m */,
+			);
+			name = network;
+			path = ../../../network;
+			sourceTree = "<group>";
+		};
+		3862C29B1DFE7D3D009B13ED /* nxToken */ = {
+			isa = PBXGroup;
+			children = (
+				3862C29C1DFE7D3D009B13ED /* NXLTokenManager.h */,
+				3862C29D1DFE7D3D009B13ED /* NXLTokenManager.m */,
+			);
+			name = nxToken;
+			path = ../../../nxToken;
+			sourceTree = "<group>";
+		};
+		3862C2E11DFEA93B009B13ED /* common */ = {
+			isa = PBXGroup;
+			children = (
+				3862C2E21DFEA951009B13ED /* crypto */,
+				3862C2EB1DFEA951009B13ED /* nxcommon.hpp */,
+				3862C2EC1DFEA951009B13ED /* nxl */,
+				3862C2F41DFEA951009B13ED /* nxlbasic.hpp */,
+				3862C2F51DFEA951009B13ED /* nxlexception.hpp */,
+			);
+			name = common;
+			sourceTree = "<group>";
+		};
+		3862C2E21DFEA951009B13ED /* crypto */ = {
+			isa = PBXGroup;
+			children = (
+				3862C2E31DFEA951009B13ED /* aes */,
+				3862C2E61DFEA951009B13ED /* cryptlite */,
+			);
+			name = crypto;
+			path = ../../../../common/crypto;
+			sourceTree = "<group>";
+		};
+		3862C2E31DFEA951009B13ED /* aes */ = {
+			isa = PBXGroup;
+			children = (
+				3862C2E41DFEA951009B13ED /* rijndael-alg-fst.c */,
+				3862C2E51DFEA951009B13ED /* rijndael-alg-fst.h */,
+			);
+			path = aes;
+			sourceTree = "<group>";
+		};
+		3862C2E61DFEA951009B13ED /* cryptlite */ = {
+			isa = PBXGroup;
+			children = (
+				3862C2E71DFEA951009B13ED /* base64.h */,
+				3862C2E81DFEA951009B13ED /* hmac.h */,
+				3862C2E91DFEA951009B13ED /* sha1.h */,
+				3862C2EA1DFEA951009B13ED /* sha256.h */,
+			);
+			path = cryptlite;
+			sourceTree = "<group>";
+		};
+		3862C2EC1DFEA951009B13ED /* nxl */ = {
+			isa = PBXGroup;
+			children = (
+				3862C2ED1DFEA951009B13ED /* include */,
+				3862C2F11DFEA951009B13ED /* src */,
+			);
+			name = nxl;
+			path = ../../../../common/nxl;
+			sourceTree = "<group>";
+		};
+		3862C2ED1DFEA951009B13ED /* include */ = {
+			isa = PBXGroup;
+			children = (
+				3862C2EE1DFEA951009B13ED /* nxlfmt.h */,
+				3862C2EF1DFEA951009B13ED /* nxlobj.h */,
+				3862C2F01DFEA951009B13ED /* utils.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		3862C2F11DFEA951009B13ED /* src */ = {
+			isa = PBXGroup;
+			children = (
+				3862C2F21DFEA951009B13ED /* nxlobj.cpp */,
+				3862C2F31DFEA951009B13ED /* utils.cpp */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		3862C3841E024EE8009B13ED /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				3862C3871E024EE8009B13ED /* NXLRouterLoginPageURL.h */,
+				3862C3881E024EE8009B13ED /* NXLRouterLoginPageURL.m */,
+			);
+			name = Login;
+			path = ../../Login;
+			sourceTree = "<group>";
+		};
+		3862C3961E029C09009B13ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3809B5501E03D7C400252BB6 /* libcrypto.a */,
+				3809B5511E03D7C400252BB6 /* libssl.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		38D5DAD71E07956D00F46DC5 /* MacSpecial */ = {
+			isa = PBXGroup;
+			children = (
+				3862C38D1E028976009B13ED /* NXLMacClient.h */,
+				3862C38E1E028976009B13ED /* NXLMacClient.m */,
+				3862C37D1E023B3D009B13ED /* NXLMacLoginViewController.h */,
+				3862C37E1E023B3D009B13ED /* NXLMacLoginViewController.m */,
+				3844FF3D1E5D7BE5000558D8 /* NXLMacSignUpViewController.h */,
+				3844FF3E1E5D7BE5000558D8 /* NXLMacSignUpViewController.m */,
+				3862C3301E015133009B13ED /* NXLCommonUtils.h */,
+				3862C3311E015133009B13ED /* NXLCommonUtils.m */,
+			);
+			name = MacSpecial;
+			sourceTree = "<group>";
+		};
+		7C868DC81FBC1503001BA7CA /* Policy */ = {
+			isa = PBXGroup;
+			children = (
+				7C868DC91FBC1503001BA7CA /* NXLFileValidateDateModel.h */,
+				7C868DCA1FBC1503001BA7CA /* NXLFileValidateDateModel.m */,
+			);
+			name = Policy;
+			path = ../../../Policy;
+			sourceTree = "<group>";
+		};
+		81F10F1A1E764F2900DC7FB6 /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				81F10F1B1E764F3600DC7FB6 /* NXLMultipartFormDataMaker.h */,
+				81F10F1C1E764F3600DC7FB6 /* NXLMultipartFormDataMaker.m */,
+			);
+			name = tools;
+			sourceTree = "<group>";
+		};
+		C9DE9622224325CE0017636A /* nxSDK */ = {
+			isa = PBXGroup;
+			children = (
+				C9DE9623224325CE0017636A /* NXLUpdateNXLMetadataAPI.h */,
+				C9DE9624224325CE0017636A /* NXLUpdateNXLMetadataAPI.m */,
+			);
+			name = nxSDK;
+			path = ../../nxSDK;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3862B9611DFE75DF009B13ED /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CFCC1A91FCE573400207FF0 /* NXLFileValidateDateModel.h in Headers */,
+				3862C2871DFE7A9E009B13ED /* NXLSDK.h in Headers */,
+				3862C29E1DFE7D3D009B13ED /* NXLTokenManager.h in Headers */,
+				3862C3931E028CCB009B13ED /* NXLUtil.h in Headers */,
+				3862C26F1DFE7A52009B13ED /* NXLSyncHelper.h in Headers */,
+				3862C2951DFE7C37009B13ED /* NXLLoger.h in Headers */,
+				3844FF3F1E5D7BE5000558D8 /* NXLMacSignUpViewController.h in Headers */,
+				3862C24A1DFE7A35009B13ED /* Reachability.h in Headers */,
+				3862C2FD1DFEA951009B13ED /* nxlfmt.h in Headers */,
+				3862C38F1E028976009B13ED /* NXLMacClient.h in Headers */,
+				3862C2FF1DFEA951009B13ED /* utils.h in Headers */,
+				3862C2191DFE79F2009B13ED /* NSData+Encryption.h in Headers */,
+				3862C23C1DFE7A35009B13ED /* NXLCacheManager.h in Headers */,
+				810ACC861E764D3C008DF6F0 /* NXLShareingLocalFileAPI.h in Headers */,
+				3862C2F81DFEA951009B13ED /* base64.h in Headers */,
+				81F10F1D1E764F3600DC7FB6 /* NXLMultipartFormDataMaker.h in Headers */,
+				3862C2391DFE7A35009B13ED /* GTMBase64.h in Headers */,
+				3862C2FE1DFEA951009B13ED /* nxlobj.h in Headers */,
+				3862C3321E015133009B13ED /* NXLCommonUtils.h in Headers */,
+				3862C2851DFE7A9E009B13ED /* NXLRights.h in Headers */,
+				3862C2AE1DFE7E7F009B13ED /* NXLNetworkHelper.h in Headers */,
+				3862C2641DFE7A52009B13ED /* NXLLogAPI.h in Headers */,
+				3862C23B1DFE7A35009B13ED /* GTMDefines.h in Headers */,
+				3862C2FC1DFEA951009B13ED /* nxcommon.hpp in Headers */,
+				84BFEA541EE7F334004677B8 /* CHCSVParser.h in Headers */,
+				3862C2FA1DFEA951009B13ED /* sha1.h in Headers */,
+				3862C2811DFE7A9E009B13ED /* NXLClientSessionStorage.h in Headers */,
+				3862C2FB1DFEA951009B13ED /* sha256.h in Headers */,
+				3862C26D1DFE7A52009B13ED /* NXLSuperRESTAPI.h in Headers */,
+				817C493C1F15F88900111A4B /* NXLShareRepoFileAPI.h in Headers */,
+				3862C2AC1DFE7E7F009B13ED /* NXLKeyChain.h in Headers */,
+				C9DE9620224325990017636A /* NXLRetrieveDecryptTokenAPI.h in Headers */,
+				3862C2B11DFE7E7F009B13ED /* NXLXMLDocument.h in Headers */,
+				3862B9671DFE75DF009B13ED /* nxlMacSDK.h in Headers */,
+				3862C2911DFE7ACA009B13ED /* NXLRestAPI.h in Headers */,
+				810ACC8E1E764E8D008DF6F0 /* NXLRemoveRecipientsFromDocumentAPI.h in Headers */,
+				810ACC901E764E8D008DF6F0 /* NXLRevokingDocumentAPI.h in Headers */,
+				3862C26B1DFE7A52009B13ED /* NXLSharingAPI.h in Headers */,
+				3862C3251E0140ED009B13ED /* NXLTenant.h in Headers */,
+				385D53BA1E601DE900FBFEAB /* NXLCheckValidTokenAPI.h in Headers */,
+				3862C32E1E014F63009B13ED /* NXLClient.h in Headers */,
+				3862C3021DFEA951009B13ED /* nxlbasic.hpp in Headers */,
+				3862C2881DFE7A9E009B13ED /* NXLSDKDef.h in Headers */,
+				3862C2601DFE7A52009B13ED /* NXLDecryptTokenAPI.h in Headers */,
+				3862C2691DFE7A52009B13ED /* NXLRESTAPITransferCenter.h in Headers */,
+				3862C28C1DFE7AC0009B13ED /* NXLProfile.h in Headers */,
+				3862C2621DFE7A52009B13ED /* NXLEncryptToken.h in Headers */,
+				3862C2661DFE7A52009B13ED /* NXLMemshipAPI.h in Headers */,
+				3862C21D1DFE79F2009B13ED /* NSString+Codec.h in Headers */,
+				3862C2F71DFEA951009B13ED /* rijndael-alg-fst.h in Headers */,
+				3862C2DF1DFE88A8009B13ED /* NXLMetaData.h in Headers */,
+				3862C2681DFE7A52009B13ED /* NXLRESTAPIScheduleProtocol.h in Headers */,
+				810ACC881E764D3C008DF6F0 /* NXLUpdateSharingRecipientsAPI.h in Headers */,
+				3862C21B1DFE79F2009B13ED /* NSData+zip.h in Headers */,
+				817C49381F15F84600111A4B /* NXLRepoFile.h in Headers */,
+				3862C38B1E024EE8009B13ED /* NXLRouterLoginPageURL.h in Headers */,
+				3862C2F91DFEA951009B13ED /* hmac.h in Headers */,
+				3862C21F1DFE79F2009B13ED /* NSString+Utility.h in Headers */,
+				5E282D891E1520CE00E7B5F0 /* NSDictionary+Ext.h in Headers */,
+				3862C2B61DFE7E7F009B13ED /* XMLWriter.h in Headers */,
+				3862C2AF1DFE7E7F009B13ED /* NXLOpenSSL.h in Headers */,
+				3862C3031DFEA951009B13ED /* nxlexception.hpp in Headers */,
+				3862C37F1E023B3D009B13ED /* NXLMacLoginViewController.h in Headers */,
+				C9DE9625224325CF0017636A /* NXLUpdateNXLMetadataAPI.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3862B9621DFE75DF009B13ED /* nxlMacSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3862B96C1DFE75DF009B13ED /* Build configuration list for PBXNativeTarget "nxlMacSDK" */;
+			buildPhases = (
+				3862B95F1DFE75DF009B13ED /* Sources */,
+				3862B9601DFE75DF009B13ED /* Frameworks */,
+				3862B9611DFE75DF009B13ED /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = nxlMacSDK;
+			productName = nxlMacSDK;
+			productReference = 3862B9631DFE75DF009B13ED /* libnxlMacSDK.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3862B95B1DFE75DF009B13ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = nextlabs;
+				TargetAttributes = {
+					3862B9621DFE75DF009B13ED = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3862B95E1DFE75DF009B13ED /* Build configuration list for PBXProject "nxlMacSDK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+			);
+			mainGroup = 3862B95A1DFE75DF009B13ED;
+			productRefGroup = 3862B9641DFE75DF009B13ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3862B9621DFE75DF009B13ED /* nxlMacSDK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3862B95F1DFE75DF009B13ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CFCC1AA1FCE575800207FF0 /* NXLFileValidateDateModel.m in Sources */,
+				3862C3801E023B3D009B13ED /* NXLMacLoginViewController.m in Sources */,
+				817C493D1F15F88900111A4B /* NXLShareRepoFileAPI.m in Sources */,
+				3862C3011DFEA951009B13ED /* utils.cpp in Sources */,
+				3862C21C1DFE79F2009B13ED /* NSData+zip.m in Sources */,
+				3862C21A1DFE79F2009B13ED /* NSData+Encryption.mm in Sources */,
+				3862C2E01DFE88A8009B13ED /* NXLMetaData.mm in Sources */,
+				3862C2B71DFE7E7F009B13ED /* XMLWriter.m in Sources */,
+				3862C2821DFE7A9E009B13ED /* NXLClientSessionStorage.m in Sources */,
+				810ACC891E764D3C008DF6F0 /* NXLUpdateSharingRecipientsAPI.m in Sources */,
+				3844FF401E5D7BE5000558D8 /* NXLMacSignUpViewController.m in Sources */,
+				3862C3001DFEA951009B13ED /* nxlobj.cpp in Sources */,
+				5E282D8B1E1520D500E7B5F0 /* NSDictionary+Ext.m in Sources */,
+				3862C2B21DFE7E7F009B13ED /* NXLXMLDocument.m in Sources */,
+				3862C2F61DFEA951009B13ED /* rijndael-alg-fst.c in Sources */,
+				3862C2631DFE7A52009B13ED /* NXLEncryptToken.m in Sources */,
+				3862B9691DFE75DF009B13ED /* nxlMacSDK.m in Sources */,
+				3862C2201DFE79F2009B13ED /* NSString+Utility.m in Sources */,
+				3862C28D1DFE7AC0009B13ED /* NXLProfile.m in Sources */,
+				810ACC8F1E764E8D008DF6F0 /* NXLRemoveRecipientsFromDocumentAPI.m in Sources */,
+				3862C26A1DFE7A52009B13ED /* NXLRESTAPITransferCenter.m in Sources */,
+				C9DE9621224325990017636A /* NXLRetrieveDecryptTokenAPI.m in Sources */,
+				810ACC911E764E8D008DF6F0 /* NXLRevokingDocumentAPI.m in Sources */,
+				3862C3901E028976009B13ED /* NXLMacClient.m in Sources */,
+				3862C26E1DFE7A52009B13ED /* NXLSuperRESTAPI.m in Sources */,
+				3862C26C1DFE7A52009B13ED /* NXLSharingAPI.m in Sources */,
+				7E84FF7322C499D1003422AC /* NXLDecryptTokenAPI.m in Sources */,
+				3862C2671DFE7A52009B13ED /* NXLMemshipAPI.m in Sources */,
+				3862C2961DFE7C37009B13ED /* NXLLoger.m in Sources */,
+				3862C2AD1DFE7E7F009B13ED /* NXLKeyChain.m in Sources */,
+				3862C29F1DFE7D3D009B13ED /* NXLTokenManager.m in Sources */,
+				3862C32F1E014F63009B13ED /* NXLClient.m in Sources */,
+				3862C23D1DFE7A35009B13ED /* NXLCacheManager.m in Sources */,
+				3862C2921DFE7ACA009B13ED /* NXLRestAPI.m in Sources */,
+				817C49391F15F84600111A4B /* NXLRepoFile.m in Sources */,
+				3862C3331E015133009B13ED /* NXLCommonUtils.m in Sources */,
+				81F10F1E1E764F3600DC7FB6 /* NXLMultipartFormDataMaker.m in Sources */,
+				C9DE9626224325CF0017636A /* NXLUpdateNXLMetadataAPI.m in Sources */,
+				385D53BB1E601DE900FBFEAB /* NXLCheckValidTokenAPI.m in Sources */,
+				3862C2B01DFE7E7F009B13ED /* NXLOpenSSL.mm in Sources */,
+				3862C2B31DFE7E7F009B13ED /* NXNetworkHelper.m in Sources */,
+				3862C23A1DFE7A35009B13ED /* GTMBase64.m in Sources */,
+				3862C2B51DFE7E7F009B13ED /* Reachability.m in Sources */,
+				3862C21E1DFE79F2009B13ED /* NSString+Codec.m in Sources */,
+				3862C2701DFE7A52009B13ED /* NXLSyncHelper.m in Sources */,
+				3862C3271E0140F5009B13ED /* NXLTenant.m in Sources */,
+				3862C38C1E024EE8009B13ED /* NXLRouterLoginPageURL.m in Sources */,
+				3862C2651DFE7A52009B13ED /* NXLLogAPI.m in Sources */,
+				810ACC871E764D3C008DF6F0 /* NXLShareingLocalFileAPI.m in Sources */,
+				84BFEA551EE7F334004677B8 /* CHCSVParser.m in Sources */,
+				3862C2861DFE7A9E009B13ED /* NXLRights.m in Sources */,
+				3862C3941E028CCB009B13ED /* NXLUtil.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3862B96A1DFE75DF009B13ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		3862B96B1DFE75DF009B13ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		3862B96D1DFE75DF009B13ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = (
+					../../../common/boost_1_61_0,
+					../../../common,
+					../../../common/crypto,
+					"$(NL_GIT_EXTERNAL_DIR)/OpenSSL/Mac/1.0.2h/include",
+					../../../common/nxl/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(NL_GIT_EXTERNAL_DIR)/OpenSSL/Mac/1.0.2h/lib",
+					"$(PROJECT_DIR)",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3862B96E1DFE75DF009B13ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = (
+					../../../common/boost_1_61_0,
+					../../../common,
+					../../../common/crypto,
+					"$(NL_GIT_EXTERNAL_DIR)/OpenSSL/Mac/1.0.2h/include",
+					../../../common/nxl/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(NL_GIT_EXTERNAL_DIR)/OpenSSL/Mac/1.0.2h/lib",
+					"$(PROJECT_DIR)",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3862B95E1DFE75DF009B13ED /* Build configuration list for PBXProject "nxlMacSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3862B96A1DFE75DF009B13ED /* Debug */,
+				3862B96B1DFE75DF009B13ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3862B96C1DFE75DF009B13ED /* Build configuration list for PBXNativeTarget "nxlMacSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3862B96D1DFE75DF009B13ED /* Debug */,
+				3862B96E1DFE75DF009B13ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3862B95B1DFE75DF009B13ED /* Project object */;
+}
